@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <h1>EDITOR!</h1>
+    <script src='/socket.io/socket.io.js'></script>
+    <script>
+        serverSocket = io('http://localhost:8000');
+        ID = serverSocket.id;
+    </script>
+    <script src="editor.bundle.js"></script>
+    <script src="client.js"></script>
+
+</head>
+<body>
+<!--<button onclick="myFunction(true)">LOCK</button>-->
+<!--<button onclick="myFunction(false)">UNLOCK</button>-->
+<input type="password" value="FakePSW" id="myInput">
+<button onclick="sendKEY()">AUTH</button>
+<br>
+<br>
+<input type="text" value="ID" id="username">
+
+<button onclick="sendNICKNAME()">NICKNAME</button>
+<br>
+<br>
+
+<div class="flex-container">
+    <nav>
+        <h1>Connected</h1>
+        <ul id="myList"></ul>
+    </nav>
+
+    <div id="e" class="e"></div>
+</div>
+
+</body>
+</html>

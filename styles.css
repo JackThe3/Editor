@@ -1,0 +1,27 @@
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+ul{
+    background-color: grey;
+    border: 1px solid black;
+}
+
+ul{height:350px; width:85%;}
+
+ul{overflow:hidden; overflow-y:scroll;}
+
+div.e {
+    height: 600px;
+    width: 80%;
+    position: relative;
+    border: 1px solid black
+}

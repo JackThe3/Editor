@@ -1,0 +1,29 @@
+{
+  "name": "editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@codemirror/collab": "^6.0.0",
+    "@codemirror/lang-javascript": "^6.1.4",
+    "@codemirror/lang-python": "^6.1.2",
+    "@codemirror/state": "^6.2.0",
+    "@codemirror/view": "^6.9.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "codemirror": "^6.0.1",
+    "express": "^4.18.2",
+    "rollup": "^3.19.1",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1"
+  }
+}
